@@ -125,6 +125,13 @@
             line-height: 1.25;
         }
 
+
+
+
+
+
+
+
     </style>
 
 </head>
@@ -258,105 +265,157 @@
     </div>
 
     <div class="b-example-divider"></div>
+    <div class="overflow-y-scroll">
+        <div class="container">
+            <header>
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4 fw-normal text-body-emphasis">Главная</h1>
+                    <p class="fs-5 text-body-secondary">Вы находитесь на сайте, предназначенном для продажи товаров</p>
+                </div>
+            </header>
 
-    <div class="container">
-        <header>
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal text-body-emphasis">Главная</h1>
-                <p class="fs-5 text-body-secondary">Вы находитесь на сайте, предназначенном для продажи товаров</p>
-            </div>
-        </header>
-
-        <main class="row">
-            <div class="row text-center">
-                <div class="col-4">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Товар 1</h4>
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title pricing-card-title">$100</h2>
-                            <p>
-                                10 users included,
-                                2 GB of storage,
-                                Email support,
-                                Help center access
-                            </p>
-                            <button type="button" class="w-100 btn btn-success">Купить</button>
+            <main class="row">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Товар 1</h4>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title">$100</h2>
+                                <p>
+                                    10 users included,
+                                    2 GB of storage,
+                                    Email support,
+                                    Help center access
+                                </p>
+                                <button type="button" class="w-100 btn btn-success">Купить</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-4 rounded-3">
-                        <div class="card-body">
-                            <form>
-                                <fieldset disabled>
-                                    <legend>Форма для заказа товара</legend>
-                                    <div class="mb-4">
-                                        <input type="text" id="disabledTextInput" class="form-control"
-                                               placeholder="Ваше имя">
+                    <div class="col-4">
+                        <div class="card mb-4 rounded-3">
+                            <div class="card-body">
+                                <form>
+                                    <fieldset disabled>
+                                        <legend>Форма для заказа товара</legend>
+                                        <div class="mb-4">
+                                            <input type="text" id="disabledTextInput" class="form-control"
+                                                   placeholder="Ваше имя">
+                                        </div>
+                                        <div class="mb-4">
+                                            <select id="disabledSelect" class="form-select">
+                                                <option>Ваш email</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="w-100 btn btn-success">Отправить</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <h4>FAQ</h4>
+                        <p class="d-inline-flex gap-1">
+                            <a class="w-100 btn btn-outline-info" data-bs-toggle="collapse"
+                               href="#multiCollapseAnswer1"
+                               role="button"
+                               aria-expanded="false" aria-controls="multiCollapseAnswer1">Как купить?</a>
+                            <button class="w-100 btn btn-outline-info" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseAnswer2" aria-expanded="false"
+                                    aria-controls="multiCollapseAnswer2">Как доставить?
+                            </button>
+                            <button class="w-100 btn btn-outline-info" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseAnswer3" aria-expanded="false"
+                                    aria-controls="multiCollapseAnswer3">Какая гарантия?
+                            </button>
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="collapse multi-collapse" id="multiCollapseAnswer1">
+                                    <div class="card card-body">
+                                        Для покупки товара необходимо заполнить форму напротив.
+                                        И дождаться ответа менеджера.
+                                        Можно и не покупать)
                                     </div>
-                                    <div class="mb-4">
-                                        <select id="disabledSelect" class="form-select">
-                                            <option>Ваш email</option>
-                                        </select>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="collapse multi-collapse" id="multiCollapseAnswer2">
+                                    <div class="card card-body">
+                                        Возможно доставить товар с помощью компаний партнеров: CDEK, OZON, ПочтаРоссии.
+                                        Способ доставки обсуждается с менеджером.
+                                        А можем и не доставлять)
                                     </div>
-                                    <button type="submit" class="w-100 btn btn-success">Отправить</button>
-                                </fieldset>
-                            </form>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="collapse multi-collapse" id="multiCollapseAnswer3">
+                                    <div class="card card-body">
+                                        Гарантии либо есть, либо их нет.
+                                        Но всё же они есть)
+                                        Спросите менеджера.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h4>FAQ</h4>
-                    <p class="d-inline-flex gap-1">
-                        <a class="w-100 btn btn-outline-info" data-bs-toggle="collapse"
-                           href="#multiCollapseAnswer1"
-                           role="button"
-                           aria-expanded="false" aria-controls="multiCollapseAnswer1">Как купить?</a>
-                        <button class="w-100 btn btn-outline-info" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseAnswer2" aria-expanded="false"
-                                aria-controls="multiCollapseAnswer2">Как доставить?
-                        </button>
-                        <button class="w-100 btn btn-outline-info" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseAnswer3" aria-expanded="false"
-                                aria-controls="multiCollapseAnswer3">Какая гарантия?
-                        </button>
-                    </p>
-                    <div class="row text-center">
-                        <div class="col-4">
-                            <div class="collapse multi-collapse" id="multiCollapseAnswer1">
-                                <div class="card card-body">
-                                    Для покупки товара необходимо заполнить форму напротив.
-                                    И дождаться ответа менеджера.
-                                    Можно и не покупать)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="collapse multi-collapse" id="multiCollapseAnswer2">
-                                <div class="card card-body">
-                                    Возможно доставить товар с помощью компаний партнеров: CDEK, OZON, ПочтаРоссии.
-                                    Способ доставки обсуждается с менеджером.
-                                    А можем и не доставлять)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="collapse multi-collapse" id="multiCollapseAnswer3">
-                                <div class="card card-body">
-                                    Гарантии либо есть, либо их нет.
-                                    Но всё же они есть)
-                                    Спросите менеджера.
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card mt-4 mb-4">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col" Номер</th>
+                                <th scope="col">Название товара</th>
+                                <th scope="col">Цена за штуку</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col">Итоговая сумма</th>
+                                <th scope="col">Статус заказа</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Нужная вещь</td>
+                                <td>100$</td>
+                                <td>2</td>
+                                <td>200$</td>
+                                <td class="table-primary">Новый</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Нужная вещь</td>
+                                <td>100$</td>
+                                <td>1</td>
+                                <td>100$</td>
+                                <td class="table-warning">Обработка</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Нужная вещь</td>
+                                <td>100$</td>
+                                <td>4</td>
+                                <td>400$</td>
+                                <td class="table-success">Обработан</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Нужная вещь</td>
+                                <td>100$</td>
+                                <td>10</td>
+                                <td>1000$</td>
+                                <td class="table-danger">Отмена</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
+
                 </div>
-            </div>
 
-        </main>
 
+            </main>
+        </div>
     </div>
 
 </main>
@@ -373,6 +432,13 @@
             new bootstrap.Tooltip(tooltipTriggerEl)
         })
     })()
+
+
+
+
+
+
+
 
 </script>
 </body>
