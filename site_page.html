@@ -125,13 +125,6 @@
             line-height: 1.25;
         }
 
-
-
-
-
-
-
-
     </style>
 
 </head>
@@ -265,7 +258,7 @@
     </div>
 
     <div class="b-example-divider"></div>
-    <div class="overflow-y-scroll">
+    <div class="overflow-y-auto">
         <div class="container">
             <header>
                 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
@@ -297,19 +290,20 @@
                         <div class="card mb-4 rounded-3">
                             <div class="card-body">
                                 <form>
-                                    <fieldset disabled>
-                                        <legend>Форма для заказа товара</legend>
-                                        <div class="mb-4">
-                                            <input type="text" id="disabledTextInput" class="form-control"
-                                                   placeholder="Ваше имя">
+                                    <div class="form-my">
+                                        <div class="mb-3">
+                                            <legend>Форма для заказа товара</legend>
+                                            <div class="mb-4">
+                                                <input type="text" id="exampleInputName" class="form-control"
+                                                       placeholder="Ваше имя">
+                                            </div>
                                         </div>
-                                        <div class="mb-4">
-                                            <select id="disabledSelect" class="form-select">
-                                                <option>Ваш email</option>
-                                            </select>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail"
+                                                   placeholder="Ваш email">
                                         </div>
                                         <button type="submit" class="w-100 btn btn-success">Отправить</button>
-                                    </fieldset>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -366,7 +360,7 @@
                         <table class="table">
                             <thead>
                             <tr>
-                                <th scope="col" Номер</th>
+                                <th scope="col">Номер</th>
                                 <th scope="col">Название товара</th>
                                 <th scope="col">Цена за штуку</th>
                                 <th scope="col">Количество</th>
@@ -432,13 +426,6 @@
             new bootstrap.Tooltip(tooltipTriggerEl)
         })
     })()
-
-
-
-
-
-
-
 
 </script>
 </body>
